@@ -5,7 +5,14 @@ This repo is the final project in my third year course: Natural Language Process
 ## Enviroment
 This project was trained out on a machine has:
 - NVIDIA Tesla P100 16GB
-## Project workflow and structure
+- torch=1.8.2
+- cudnn=8.2
+- cudatoolkit=10.2
+- ntlk=3.6.5
+- numpy=1.20
+- matplotlib=3.4
+
+## Project structure
 
 The project is generally structured as follows:
 ```
