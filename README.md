@@ -79,11 +79,12 @@ If you setup everything correctly, then you can press run all on Jupyter Noteboo
 | Model   | Dectection Precision | Dectection Recall | Dectection F1 | Correction Accuracy |
 |----------|------------------------|--------------------|-----------------|-----------------------|
 | Seq2Seq LSTM with attention(40 epochs) | 88.44% | 76.81% | 82.21% | 82.8%
-|Seq2Seq-Attention Transformer(40 epochs) | 89.6% | 78% | 83.42% | 84.4%
+|Seq2Seq-Attention Transformer(40 epochs) | 91.67% | 78.38% | 84.51% | 84.4%
 |Hierarchical Transformer(40 epochs) |  | |  | 70%
 
 The training time for correction model is nearly the same, around 16-17 minutes/epoch
-The training time for lstm detection model is 10 minutes/epoch, whereas for transformer model is 7 minutes/epoch. I only train detection model for one epoch
+The training time for lstm detection model is 14 minutes/epoch, whereas for transformer model is 12 minutes/epoch. 
+I only train detection model for one epoch.
 ## Demo
 ![LSTM](https://github.com/ssjinkaido/Final-NLP-Project/blob/master/demo/demo_lstm.PNG)
 ![Transformer](https://github.com/ssjinkaido/Final-NLP-Project/blob/master/demo/demo_transformer.PNG)

@@ -524,10 +524,10 @@ if __name__ == "__main__":
     model_detector_lstm.load_state_dict(checkpoint_detector_lstm['state_dict'])
     model_detector_lstm.to(device)
 
-    model_detector_transformer = TransformerDetector(len(vocab_word), 512,
+    model_detector_transformer = TransformerDetector(len(vocab_word), 768,
                                                      2048,
-                                                     1, 8,
-                                                     config_trans.max_len, config_trans.PAD_IDX, config_trans.SOS_IDX,
+                                                     1, 6,
+                                                     10, config_trans.PAD_IDX, config_trans.SOS_IDX,
                                                      config_trans.EOS_IDX)
     checkpoint_detector_transformer = torch.load('model/model_detector_transformer_1.pth',
                                                  map_location=torch.device('cpu'))
